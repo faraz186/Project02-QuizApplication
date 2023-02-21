@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(115deg, rgba(101,151,209,0.8),rgba(202,102,211,0.5)),url(/quizbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+img{
+    width: 6rem;
+    height: 6.5rem;
+    border-radius: 50%;
+}
+.img{
+    position: fixed;
+}
+#title{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 3.5rem;
+    color: rgb(49,70,7);
+    background: rgba(105,224,90,0.55);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.questions{
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: rgba(0,255,221,0.45);
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#question{
+    margin-bottom: 1.8rem;
+}
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    border-bottom: solid 0.1rem blue;
+    width: 15rem;
+    background: lightblue;
+    border-radius: 1rem;
+}
+.option:hover{
+    color: rgb(255, 255, 255);
+}
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: rgb(3, 60, 60);
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+#answer{
+    margin-top: 2.5rem;
+}
+#stat{
+    margin-top: 1.5rem;
+    color: rgb(6,17,168);
+    font-size: 18px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttons{
+    text-align: center;
+}
+button{
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: rgba(115, 72, 186, 0.98);
+    background: rgba(174, 189, 35, 0.82);
+}
+button:active{
+    background: rgb(218, 218, 239);
+}
+#scoreboard,#answerBank{
+    width: 25rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 2rem;
+    display: none;
+}
+#score-title{
+    margin: 1rem 0;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 3rem;
+}
+#answerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#answers{
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+}
